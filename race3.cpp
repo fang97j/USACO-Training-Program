@@ -15,9 +15,9 @@ LANG: C++11
 
 // To check if a vertex is splitting, first remove all outgoing edges and flood fill from 0
 // to get one course.
-// Then remove all incoming edges and flood fill from the vertex to get the other course.
-// The vertex is splitting of these courses cover all vertices once, except the vertex in question,
-// which would appear twice.
+// Restore those edges, then remove all incoming edges and flood fill from the vertex to get 
+// the other course. The vertex is splitting of these courses cover all vertices once, except 
+// the vertex in question, which would appear twice.
 
 std::ifstream fin("race3.in");
 std::ofstream fout("race3.out");
